@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Total Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Car Total Cost Calculator</h2>
+        <form id="costCalc">
+            <div class="form-group">
+                <label for="carPrice">Car Price ($)</label>
+                <input type="number" id="carPrice" required>
+            </div>
+            <button type="button" onclick="calculateTotal()">Calculate Total Cost</button>
+        </form>
+        <div id="results" style="display:none;">
+            <h3>Cost Breakdown</h3>
+            <p>Car Price: $<span id="displayCarPrice"></span></p>
+            <p>Tags: $522</p>
+            <p>Tax (6%): $<span id="displayTax"></span></p>
+            
+            <p>Dealership Fee: $800</p>
+            <p><strong>Total Cost: $<span id="displayTotal"></span></strong></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
